@@ -1,0 +1,11 @@
+<div *ngIf="tech">
+  <h3 style="text-align: center">Edit Technology</h3>
+  <h4 style="text-align: center; font-size: large">{{tech.name}}</h4>
+  <div class = "well">
+    <div><label>id: </label>{{tech.id}}</div>
+    <label>name: </label>
+    <input [(ngModel)]="tech.name" placeholder="name"/>
+    <label style="margin-left: 25px">creator: </label>
+    <input [(ngModel)]="tech.creator" placeholder="creator">
+  </div>
+</div>
