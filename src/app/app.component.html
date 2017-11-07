@@ -6,20 +6,8 @@
   <img width="200" src="assets/logo.png" style="margin-bottom: 20px;">
 </div>
 
-<tech-detail [tech]="selectedTech"></tech-detail>
-
-<div class="container-fluid" >
-  <h2 style= "text-align: center">Technologies under usage</h2>
-  <div >
-    <ul class="techs">
-      <li *ngFor="let tech of techs"
-          [class.selected] = "tech === selectedTech"
-          (click)="onSelect(tech)">
-        <span class="badge">{{tech.id}}</span> {{tech.name}}
-      </li>
-    </ul>
-  </div>
-</div>
+<technologies></technologies>
+<app-messages></app-messages>
 
 
 
