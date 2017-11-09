@@ -8,14 +8,17 @@ import {TechService} from './services/tech.service';
 import {TechnologiesComponent} from './components/technologies.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './services/message.service';
+import { RoutingModule } from './router/router.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
-    AppComponent, TechnologiesComponent , TechDetailComponent, MessagesComponent
+    AppComponent, TechnologiesComponent , TechDetailComponent, MessagesComponent, DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RoutingModule
   ],
   providers: [TechService, MessageService],
   bootstrap: [AppComponent]

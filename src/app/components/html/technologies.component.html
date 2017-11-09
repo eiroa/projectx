@@ -4,10 +4,10 @@
   <h2 style= "text-align: center">Technologies under usage</h2>
   <div >
     <ul class="techs">
-      <li *ngFor="let tech of techs"
-          [class.selected] = "tech === selectedTech"
-          (click)="onSelect(tech)">
-        <span class="badge">{{tech.id}}</span> {{tech.name}}
+      <li *ngFor="let tech of techs">
+        <a routerLink="/detail/{{tech.id}}">
+          <span class="badge">{{tech.id}}</span> {{tech.name}}
+        </a>
       </li>
     </ul>
   </div>

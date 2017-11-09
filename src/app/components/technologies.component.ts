@@ -9,14 +9,14 @@ import { TechService } from '../services/tech.service';
 })
 
 export class TechnologiesComponent implements OnInit {
-  selectedTech: Technology;
+  // selectedTech: Technology;
   techs: Technology[];
   ngOnInit(): void {
     this.getTechs();
   }
-  onSelect(tech: Technology): void {
-    this.selectedTech = tech;
-  }
+  // onSelect(tech: Technology): void {
+  //   this.selectedTech = tech;
+  // }
 
   getTechs(): void {
     this.techService.getTechs().subscribe(maybeTechs => this.techs = maybeTechs);
